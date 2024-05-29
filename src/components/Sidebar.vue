@@ -32,9 +32,5 @@
   </script>
   
   <style scoped>
-  /* Ensure the sidebar takes up the full height */
-  .h-full {
-    height: 100%;
-  }
   </style>
   

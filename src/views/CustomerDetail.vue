@@ -34,4 +34,4 @@ export default {
     }
   },
 };
-</script>../views/ProductList.vue../components/ProductList.vue
+</script>
