@@ -2,6 +2,10 @@
 
 This project is a frontend application for Parlem, built with Vue 3 and Vite. It includes components for managing customers and products, along with a sidebar for navigation. The application uses Tailwind CSS for styling.
 
+## Enable Backend
+
+To enable backend just uncomment info from src/api, and then enable backend with node server.js it will listen to port local 3001
+
 ## Project Structure
 `````
 parlem-frontend/

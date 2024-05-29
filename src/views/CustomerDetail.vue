@@ -1,6 +1,7 @@
 <template>
   <div v-if="customer" class="p-4">
     <h1 class="text-2xl font-bold mb-4">Detalles del Cliente</h1>
+    <p class="mb-2">Customer id: {{ customer.customerId }}</p>
     <p class="mb-2">Nombre: {{ customer.givenName }} {{ customer.familyName1 }}</p>
     <p class="mb-2">Email: {{ customer.email }}</p>
     <p class="mb-2">Teléfono: {{ customer.phone }}</p>

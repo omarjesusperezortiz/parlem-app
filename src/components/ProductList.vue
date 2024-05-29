@@ -36,8 +36,13 @@ export default {
   data() {
     return {
       search: '',
-      products: [],
     };
+  },
+  props: {
+    products: {
+      type: Array,
+      required: true,
+    },
   },
   computed: {
     filteredProducts() {
@@ -53,12 +58,7 @@ export default {
         );
       });
     },
-  },
-  created() {
-    fetchAllProducts().then((data) => {
-      this.products = data;
-    });
-  },
+  }
 };
 </script>
 

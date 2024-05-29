@@ -7,7 +7,7 @@
 
 <script>
 import ProductList from './../components/ProductList.vue'
-import { fetchProductsByCustomerId, fetchAllProducts } from '../api/productApi';
+import { fetchAllProducts } from '../api/productApi';
 
 export default {
   props: {
@@ -23,15 +23,9 @@ export default {
     };
   },
   created() {
-    if (this.customerId) {
-      fetchProductsByCustomerId(this.customerId).then((data) => {
+    fetchAllProducts().then((data) => {
         this.products = data;
       });
-    } else {
-      fetchAllProducts().then((data) => {
-        this.products = data;
-      });
-    }
   },
 };
 </script>
